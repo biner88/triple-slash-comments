@@ -16,6 +16,10 @@
       {
         "command": "tsc.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "tsc.getSelectedText",
+        "title": "getSelectedText"
       }
     ]
   },
