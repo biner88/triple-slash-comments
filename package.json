@@ -1,28 +1,53 @@
 {
   "name": "tsc",
-  "displayName": "tsc",
+  "displayName": "TSC",
   "description": "Triple Slash Comments",
-  "version": "0.0.1",
+  "publisher": "Teenagex",
+  "author": {
+    "name": "Teenagex"
+  },
+  "version": "1.0.0",
   "engines": {
-    "vscode": "^1.79.2"
+    "vscode": "^1.80.0"
   },
   "categories": [
-    "Other"
+    "Formatters"
   ],
+  "galleryBanner": {
+    "color": "#F2F2F2",
+    "theme": "light"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biner88/triple-slash-comments"
+  },
+  "bugs": {
+    "url": "https://github.com/biner88/triple-slash-comments/issues"
+  },
+  "keywords": [
+    "Triple Slash Comments",
+    "Comments",
+    "dart"
+  ],
+  "icon": "images/AppIcon.png",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "tsc.helloWorld",
-        "title": "Hello World"
-      },
-      {
-        "command": "tsc.getSelectedText",
-        "title": "getSelectedText"
+        "command": "tsc.triplesSlashComments",
+        "title": "Triple Slash Comments"
       }
     ]
   },
+  "keybindings": [
+    {
+      "command": "tsc.triplesSlashComments",
+      "key": "ctrl+/ ctrl+/",
+      "mac": "cmd+/ cmd+/",
+      "when": "editorTextFocus"
+    }
+  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
