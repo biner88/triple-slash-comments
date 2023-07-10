@@ -1,13 +1,17 @@
 # TSC
 
 Triple Slash Comments
+三个斜杠注释
 
 ## Usage
 
-* Open the “Keyboard Shortcuts” settings.
-* Search for “Triple Slash Comments.”
-* Bind the shortcut keys: For Windows, it is Ctrl+/ Ctrl+/; for Mac, it is Cmd+/ Cmd+/.
-* Select the text, hold down Ctrl or Cmd, and press / twice to add comments. Press / twice again to remove comments.
+* Open the `Keyboard Shortcuts` settings.
+* Search for `Triple Slash Comments`
+* Bind the shortcut keys: For Windows, it is `ctrl+alt+/`; for Mac, it is `ctrl+cmd+/`.
+
+* 打开【键盘快捷方式】设置
+* 搜索 `Triple Slash Comments`
+* 绑定快捷键 win：`ctrl+alt+/`，mac：`ctrl+cmd+/`
 
 ## Screenshot
 

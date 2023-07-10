@@ -6,7 +6,7 @@
   "author": {
     "name": "Teenagex"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -43,8 +43,8 @@
   "keybindings": [
     {
       "command": "tsc.triplesSlashComments",
-      "key": "ctrl+/ ctrl+/",
-      "mac": "cmd+/ cmd+/",
+      "key": "shift+ctrl+/",
+      "mac": "ctrl+cmd+/",
       "when": "editorTextFocus"
     }
   ],
