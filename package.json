@@ -1,12 +1,12 @@
 {
   "name": "tsc",
   "displayName": "TSC",
-  "description": "Triple Slash Comments",
+  "description": "Triple Slash Comments 三个斜杠注释",
   "publisher": "Teenagex",
   "author": {
     "name": "Teenagex"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -38,16 +38,17 @@
         "command": "tsc.triplesSlashComments",
         "title": "Triple Slash Comments"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "tsc.triplesSlashComments",
+        "win": "shift+ctrl+/",
+        "linux": "shift+ctrl+/",
+        "mac": "ctrl+cmd+/",
+        "when": "editorTextFocus"
+      }
     ]
   },
-  "keybindings": [
-    {
-      "command": "tsc.triplesSlashComments",
-      "key": "shift+ctrl+/",
-      "mac": "ctrl+cmd+/",
-      "when": "editorTextFocus"
-    }
-  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
