@@ -1,7 +1,7 @@
 /*
  * @Date: 2023-07-07 17:04:40
  * @LastEditors: teenagex
- * @LastEditTime: 2023-07-10 15:15:50
+ * @LastEditTime: 2023-07-12 18:20:08
  */
 const vscode = require('vscode');
 function activate(context) {
@@ -14,10 +14,12 @@ function activate(context) {
 				for (let lineNumber = selection.start.line; lineNumber <= selection.end.line; lineNumber++) {
 					const line = document.lineAt(lineNumber);
 					// const position = new vscode.Position(lineNumber, line.firstNonWhitespaceCharacterIndex);
-					const textToReplace = line.text.trim();
+					const textToReplace = line.text;
 					let newText;
-					if (textToReplace.startsWith("///")) {
-						newText = `${textToReplace.replace("///", "").trim()}`;
+					if (textToReplace.startsWith("/// ")) {
+						newText = `${textToReplace.replace("/// ", "")}`;
+					} else if (textToReplace.startsWith("///")) {
+						newText = `${textToReplace.replace("///", "")}`;
 					} else {
 						newText = `/// ${textToReplace}`;
 					}
